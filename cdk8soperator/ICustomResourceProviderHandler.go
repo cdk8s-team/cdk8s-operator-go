@@ -1,4 +1,3 @@
-// Create Kubernetes CRD Operators using CDK8s Constructs
 package cdk8soperator
 
 import (
