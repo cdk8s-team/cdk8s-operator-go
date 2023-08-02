@@ -19,8 +19,12 @@ type Operator interface {
 	// The output directory into which manifests will be synthesized.
 	Outdir() *string
 	// The file extension to use for rendered YAML files.
+	// Default: .k8s.yaml
+	//
 	OutputFileExtension() *string
 	// How to divide the YAML output into files.
+	// Default: YamlOutputType.FILE_PER_CHART
+	//
 	YamlOutputType() cdk8s.YamlOutputType
 	// Adds a custom resource provider to this operator.
 	AddProvider(provider *CustomResourceProvider)
