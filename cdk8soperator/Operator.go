@@ -22,6 +22,11 @@ type Operator interface {
 	// Default: .k8s.yaml
 	//
 	OutputFileExtension() *string
+	// Resolvers used by this app.
+	//
+	// This includes both custom resolvers
+	// passed by the `resolvers` property, as well as built-in resolvers.
+	Resolvers() *[]cdk8s.IResolver
 	// How to divide the YAML output into files.
 	// Default: YamlOutputType.FILE_PER_CHART
 	//
@@ -85,6 +90,16 @@ func (j *jsiiProxy_Operator) OutputFileExtension() *string {
 	_jsii_.Get(
 		j,
 		"outputFileExtension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Operator) Resolvers() *[]cdk8s.IResolver {
+	var returns *[]cdk8s.IResolver
+	_jsii_.Get(
+		j,
+		"resolvers",
 		&returns,
 	)
 	return returns
@@ -157,6 +172,24 @@ func Operator_IsConstruct(x interface{}) *bool {
 		"cdk8s-operator.Operator",
 		"isConstruct",
 		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func Operator_Of(c constructs.IConstruct) cdk8s.App {
+	_init_.Initialize()
+
+	if err := validateOperator_OfParameters(c); err != nil {
+		panic(err)
+	}
+	var returns cdk8s.App
+
+	_jsii_.StaticInvoke(
+		"cdk8s-operator.Operator",
+		"of",
+		[]interface{}{c},
 		&returns,
 	)
 

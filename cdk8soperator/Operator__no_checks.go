@@ -12,6 +12,10 @@ func validateOperator_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOperator_OfParameters(c constructs.IConstruct) error {
+	return nil
+}
+
 func validateNewOperatorParameters(props *OperatorProps) error {
 	return nil
 }

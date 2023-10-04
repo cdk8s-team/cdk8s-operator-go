@@ -31,6 +31,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "outdir", GoGetter: "Outdir"},
 			_jsii_.MemberProperty{JsiiProperty: "outputFileExtension", GoGetter: "OutputFileExtension"},
+			_jsii_.MemberProperty{JsiiProperty: "resolvers", GoGetter: "Resolvers"},
 			_jsii_.MemberMethod{JsiiMethod: "synth", GoMethod: "Synth"},
 			_jsii_.MemberMethod{JsiiMethod: "synthYaml", GoMethod: "SynthYaml"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

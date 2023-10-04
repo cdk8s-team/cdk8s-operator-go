@@ -6,6 +6,8 @@ import (
 	"fmt"
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+
+	"github.com/aws/constructs-go/constructs/v10"
 )
 
 func (o *jsiiProxy_Operator) validateAddProviderParameters(provider *CustomResourceProvider) error {
@@ -22,6 +24,14 @@ func (o *jsiiProxy_Operator) validateAddProviderParameters(provider *CustomResou
 func validateOperator_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateOperator_OfParameters(c constructs.IConstruct) error {
+	if c == nil {
+		return fmt.Errorf("parameter c is required, but nil was provided")
 	}
 
 	return nil
