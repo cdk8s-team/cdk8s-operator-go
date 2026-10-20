@@ -55,7 +55,7 @@ func (s *jsiiProxy_Server) Close() {
 func (s *jsiiProxy_Server) Listen(port *float64) *float64 {
 	var returns *float64
 
-	_jsii_.Invoke(
+	_jsii_.AsyncInvoke(
 		s,
 		"listen",
 		[]interface{}{port},
